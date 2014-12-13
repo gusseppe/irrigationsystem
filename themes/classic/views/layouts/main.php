@@ -8,9 +8,9 @@
   
   <!--Mobile viewport optimized-->
   <meta name="viewport" content="width=device-width">
-  <title><?php echo $this->pageTitle;?>Openack</title>
+  <title><?php echo $this->pageTitle;?>System</title>
   <meta name="description" content="Comparte y aprende" />
-  <meta name="keywords" content="Universidad, colegio, academia, cepre, estudiar" />
+  <meta name="keywords" content="Universidad" />
   
   <!--Fonts de google-->
   <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'> -->
@@ -33,10 +33,10 @@
     <!--Barra de navegacion inicial-->
     <div class="navbar">
        <div class="navbar-inner"> 
-         <a class="brand" href="<?php echo Yii::app()->theme->baseUrl;?>/main.php">&nbsp&nbsp&nbspOpenack</a>
+         <a class="brand" href="<?php echo Yii::app()->theme->baseUrl;?>/main.php">&nbsp&nbsp&nbsp System</a>
          <img id="logo" src="<?php echo Yii::app()->theme->baseUrl;?>/Logo/logo.png" width = "26px" height="26px"></img>
          <ul class="nav">
-           <li class="active"><a href="<?php echo Yii::app()->theme->baseUrl;?>/main.php">Inicio</a></li>
+           <li class="active"><a href="<?php echo Yii::app()->theme->baseUrl;?>/views/layouts/main.php">Inicio</a></li>
            <li><a href="#">Conócenos</a></li>
 
          </ul>
@@ -46,7 +46,7 @@
     <div class="header">
         <h1>Irrigation system.</h1>
         <p>Este sistema permite dosificar y automatizar el riego de parcelas de sembríos.</br>
-           para la universidad, academia-cepre, y el colegio.</br>   
+           </br>   
         </p>
     </div>  
     <hr>

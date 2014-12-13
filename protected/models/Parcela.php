@@ -1,26 +1,27 @@
 <?php
 
 /**
- * This is the model class for table "Carrera_has_Ciclo".
+ * This is the model class for table "Parcela".
  *
- * The followings are the available columns in table 'Carrera_has_Ciclo':
- * @property integer $Carrera_idCarrera
- * @property integer $Carrera_Facultad_idFacultad
- * @property integer $Ciclo_idCiclo
+ * The followings are the available columns in table 'Parcela':
+ * @property integer $idParcela
+ * @property integer $nivelHumedad
+ * @property string $lugar
+ * @property double $consumo
+ * @property integer $estado
  *
  * The followings are the available model relations:
- * @property Carrera $carreraIdCarrera
- * @property Carrera $carreraFacultadIdFacultad
- * @property Ciclo $cicloIdCiclo
+ * @property Estados[] $estadoses
+ * @property Programacion[] $programacions
  */
-class CarreraHasCiclo extends CActiveRecord
+class Parcela extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'Carrera_has_Ciclo';
+		return 'Parcela';
 	}
 
 	/**
@@ -31,11 +32,13 @@ class CarreraHasCiclo extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Carrera_idCarrera, Carrera_Facultad_idFacultad, Ciclo_idCiclo', 'required'),
-			array('Carrera_idCarrera, Carrera_Facultad_idFacultad, Ciclo_idCiclo', 'numerical', 'integerOnly'=>true),
+			array('nivelHumedad, lugar, consumo, estado', 'required'),
+			array('nivelHumedad, estado', 'numerical', 'integerOnly'=>true),
+			array('consumo', 'numerical'),
+			array('lugar', 'length', 'max'=>45),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('Carrera_idCarrera, Carrera_Facultad_idFacultad, Ciclo_idCiclo', 'safe', 'on'=>'search'),
+			array('idParcela, nivelHumedad, lugar, consumo, estado', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -47,9 +50,8 @@ class CarreraHasCiclo extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'carreraIdCarrera' => array(self::BELONGS_TO, 'Carrera', 'Carrera_idCarrera'),
-			'carreraFacultadIdFacultad' => array(self::BELONGS_TO, 'Carrera', 'Carrera_Facultad_idFacultad'),
-			'cicloIdCiclo' => array(self::BELONGS_TO, 'Ciclo', 'Ciclo_idCiclo'),
+			'estadoses' => array(self::HAS_MANY, 'Estados', 'estado'),
+			'programacions' => array(self::HAS_MANY, 'Programacion', 'idParcela'),
 		);
 	}
 
@@ -59,9 +61,11 @@ class CarreraHasCiclo extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'Carrera_idCarrera' => 'Carrera Id Carrera',
-			'Carrera_Facultad_idFacultad' => 'Carrera Facultad Id Facultad',
-			'Ciclo_idCiclo' => 'Ciclo Id Ciclo',
+			'idParcela' => 'Id Parcela',
+			'nivelHumedad' => 'Nivel Humedad',
+			'lugar' => 'Lugar',
+			'consumo' => 'Consumo',
+			'estado' => 'Estado',
 		);
 	}
 
@@ -83,9 +87,11 @@ class CarreraHasCiclo extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('Carrera_idCarrera',$this->Carrera_idCarrera);
-		$criteria->compare('Carrera_Facultad_idFacultad',$this->Carrera_Facultad_idFacultad);
-		$criteria->compare('Ciclo_idCiclo',$this->Ciclo_idCiclo);
+		$criteria->compare('idParcela',$this->idParcela);
+		$criteria->compare('nivelHumedad',$this->nivelHumedad);
+		$criteria->compare('lugar',$this->lugar,true);
+		$criteria->compare('consumo',$this->consumo);
+		$criteria->compare('estado',$this->estado);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -96,7 +102,7 @@ class CarreraHasCiclo extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return CarreraHasCiclo the static model class
+	 * @return Parcela the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

@@ -8,3 +8,430 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/openack/index.php?r=usuario/usuario
 ---
+2014/12/13 06:30:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/Parcela".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/Parcela')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=gii/Parcela
+---
+2014/12/13 06:30:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/Parcela".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/Parcela')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=gii/Parcela
+---
+2014/12/13 06:56:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "formParcela".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('formParcela')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=formParcela
+---
+2014/12/13 07:23:39 [error] [php] Trying to get property of non-object (/var/www/html/finalIngSoftware/protected/views/site/index.php:26)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/html/finalIngSoftware/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/finalIngSoftware/index.php(13): CWebApplication->run()
+REQUEST_URI=/finalIngSoftware/index.php?r=site/index
+in /var/www/html/finalIngSoftware/protected/views/site/index.php (26)
+in /var/www/html/finalIngSoftware/protected/controllers/SiteController.php (32)
+in /var/www/html/finalIngSoftware/index.php (13)
+2014/12/13 07:23:58 [error] [php] Trying to get property of non-object (/var/www/html/finalIngSoftware/protected/views/site/index.php:26)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/html/finalIngSoftware/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/finalIngSoftware/index.php(13): CWebApplication->run()
+REQUEST_URI=/finalIngSoftware/index.php?r=site/index
+in /var/www/html/finalIngSoftware/protected/views/site/index.php (26)
+in /var/www/html/finalIngSoftware/protected/controllers/SiteController.php (32)
+in /var/www/html/finalIngSoftware/index.php (13)
+2014/12/13 07:29:56 [error] [php] Trying to get property of non-object (/var/www/html/finalIngSoftware/protected/views/site/index.php:33)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/html/finalIngSoftware/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/finalIngSoftware/index.php(13): CWebApplication->run()
+REQUEST_URI=/finalIngSoftware/index.php?r=site/index
+in /var/www/html/finalIngSoftware/protected/views/site/index.php (33)
+in /var/www/html/finalIngSoftware/protected/controllers/SiteController.php (32)
+in /var/www/html/finalIngSoftware/index.php (13)
+2014/12/13 07:30:22 [error] [php] Trying to get property of non-object (/var/www/html/finalIngSoftware/protected/views/site/index.php:59)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(869): SiteController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(782): SiteController->renderPartial()
+#2 /var/www/html/finalIngSoftware/protected/controllers/SiteController.php(32): SiteController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(286): SiteController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/finalIngSoftware/index.php(13): CWebApplication->run()
+REQUEST_URI=/finalIngSoftware/index.php?r=site/index
+in /var/www/html/finalIngSoftware/protected/views/site/index.php (59)
+in /var/www/html/finalIngSoftware/protected/controllers/SiteController.php (32)
+in /var/www/html/finalIngSoftware/index.php (13)
+2014/12/13 07:40:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "../Parcela/index".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('../Parcela/inde...')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=../Parcela/index
+HTTP_REFERER=http://localhost/finalIngSoftware/index.php?r=site/index
+---
+2014/12/13 07:52:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Inicio/index".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Inicio/index')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=Inicio/index
+HTTP_REFERER=http://localhost/finalIngSoftware/index.php?r=site/index
+---
+2014/12/13 07:52:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Inicio/index".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Inicio/index')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=Inicio/index
+HTTP_REFERER=http://localhost/finalIngSoftware/index.php?r=Programacion/index
+---
+2014/12/13 07:52:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Inicio/index".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Inicio/index')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=Inicio/index
+HTTP_REFERER=http://localhost/finalIngSoftware/index.php?r=Programacion/index
+---
+2014/12/13 07:56:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Inicio/index.php".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Inicio/index.ph...')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=Inicio/index.php
+HTTP_REFERER=http://localhost/finalIngSoftware/index.php?r=site/index
+---
+2014/12/13 07:59:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Inicio/index.php".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Inicio/index.ph...')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=Inicio/index.php
+HTTP_REFERER=http://localhost/finalIngSoftware/index.php?r=site/index
+---
+2014/12/13 07:59:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Inicio/index.php".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Inicio/index.ph...')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=Inicio/index.php
+HTTP_REFERER=http://localhost/finalIngSoftware/index.php?r=site/index
+---
+2014/12/13 08:00:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Inicio/index.php".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Inicio/index.ph...')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=Inicio/index.php
+HTTP_REFERER=http://localhost/finalIngSoftware/index.php?r=site/index
+---
+2014/12/13 08:00:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "../Inicio/index.php".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('../Inicio/index...')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=../Inicio/index.php
+HTTP_REFERER=http://localhost/finalIngSoftware/index.php?r=Inicio/index.php
+---
+2014/12/13 08:02:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "../Inicio/index.php".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('../Inicio/index...')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=../Inicio/index.php
+HTTP_REFERER=http://localhost/finalIngSoftware/index.php?r=Inicio/index.php
+---
+2014/12/13 08:02:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index2.php".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('index2.php')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('index2.php')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index2.php')
+#3 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=site/index2.php
+HTTP_REFERER=http://localhost/finalIngSoftware/index.php?r=../Inicio/index.php
+---
+2014/12/13 08:04:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "../Inicio/index.php".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('../Inicio/index...')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=../Inicio/index.php
+HTTP_REFERER=http://localhost/finalIngSoftware/index.php?r=Inicio/index.php
+---
+2014/12/13 08:09:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "../Inicio/index.php".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('../Inicio/index...')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=../Inicio/index.php
+HTTP_REFERER=http://localhost/finalIngSoftware/index.php?r=Inicio/index.php
+---
+2014/12/13 08:09:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index2.php".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('index2.php')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('index2.php')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index2.php')
+#3 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=site/index2.php
+HTTP_REFERER=http://localhost/finalIngSoftware/index.php?r=site/login
+---
+2014/12/13 08:10:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index2.php".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('index2.php')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('index2.php')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index2.php')
+#3 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=site/index2.php
+HTTP_REFERER=http://localhost/finalIngSoftware/index.php?r=Programacion/index
+---
+2014/12/13 08:33:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "formParcela".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('formParcela')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=formParcela
+HTTP_REFERER=http://localhost/finalIngSoftware/index.php?r=site/index
+---
+2014/12/13 08:33:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "formParcela.php".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('formParcela.php')
+#1 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/html/finalIngSoftware/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/finalIngSoftware/index.php?r=formParcela.php
+HTTP_REFERER=http://localhost/finalIngSoftware/index.php?r=site/index
+---
+2014/12/13 08:47:57 [error] [php] Undefined index: valor (/var/www/html/finalIngSoftware/protected/views/registro/index.php:71)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(869): RegistroController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(782): RegistroController->renderPartial()
+#2 /var/www/html/finalIngSoftware/protected/controllers/RegistroController.php(7): RegistroController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): RegistroController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(286): RegistroController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(265): RegistroController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): RegistroController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/finalIngSoftware/index.php(13): CWebApplication->run()
+REQUEST_URI=/finalIngSoftware/index.php?r=registro/index
+in /var/www/html/finalIngSoftware/protected/views/registro/index.php (71)
+in /var/www/html/finalIngSoftware/protected/controllers/RegistroController.php (7)
+in /var/www/html/finalIngSoftware/index.php (13)
+2014/12/13 08:48:09 [error] [php] Undefined index: valor (/var/www/html/finalIngSoftware/protected/views/registro/index.php:71)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(869): RegistroController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(782): RegistroController->renderPartial()
+#2 /var/www/html/finalIngSoftware/protected/controllers/RegistroController.php(7): RegistroController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): RegistroController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(286): RegistroController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(265): RegistroController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): RegistroController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/finalIngSoftware/index.php(13): CWebApplication->run()
+REQUEST_URI=/finalIngSoftware/index.php?r=registro/index
+in /var/www/html/finalIngSoftware/protected/views/registro/index.php (71)
+in /var/www/html/finalIngSoftware/protected/controllers/RegistroController.php (7)
+in /var/www/html/finalIngSoftware/index.php (13)
+2014/12/13 08:52:10 [error] [php] Undefined index: valor (/var/www/html/finalIngSoftware/protected/views/registro/index.php:71)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(869): RegistroController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(782): RegistroController->renderPartial()
+#2 /var/www/html/finalIngSoftware/protected/controllers/RegistroController.php(7): RegistroController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): RegistroController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(286): RegistroController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(265): RegistroController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): RegistroController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/html/finalIngSoftware/index.php(13): CWebApplication->run()
+REQUEST_URI=/finalIngSoftware/index.php?r=registro/index
+in /var/www/html/finalIngSoftware/protected/views/registro/index.php (71)
+in /var/www/html/finalIngSoftware/protected/controllers/RegistroController.php (7)
+in /var/www/html/finalIngSoftware/index.php (13)
+2014/12/13 08:57:52 [error] [php] Undefined index: valor (/var/www/html/finalIngSoftware/protected/views/layouts/main.php:49)
+Stack trace:
+#0 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(76): ProgramacionController->renderFile()
+#1 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/html/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#4 /var/www/html/yii/framework/web/CBaseController.php(300): ProgramacionController->endWidget()
+#5 /var/www/html/finalIngSoftware/protected/views/layouts/column2.php(22): ProgramacionController->endContent()
+#6 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/yii/framework/web/CBaseController.php(95): ProgramacionController->renderInternal()
+#8 /var/www/html/yii/framework/web/CController.php(784): ProgramacionController->renderFile()
+#9 /var/www/html/finalIngSoftware/protected/controllers/ProgramacionController.php(128): ProgramacionController->render()
+#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): ProgramacionController->actionIndex()
+#11 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): ProgramacionController->runAction()
+#13 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#15 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): ProgramacionController->filterAccessControl()
+#16 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#17 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/html/yii/framework/web/CController.php(265): ProgramacionController->runActionWithFilters()
+#19 /var/www/html/yii/framework/web/CWebApplication.php(282): ProgramacionController->run()
+#20 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#22 /var/www/html/finalIngSoftware/index.php(13): CWebApplication->run()
+REQUEST_URI=/finalIngSoftware/index.php?r=Programacion/index
+in /var/www/html/finalIngSoftware/protected/views/layouts/main.php (49)
+in /var/www/html/finalIngSoftware/protected/views/layouts/column2.php (22)
+in /var/www/html/finalIngSoftware/protected/controllers/ProgramacionController.php (128)
+2014/12/13 08:57:55 [error] [php] Undefined index: valor (/var/www/html/finalIngSoftware/protected/views/layouts/main.php:49)
+Stack trace:
+#0 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/html/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#4 /var/www/html/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#5 /var/www/html/finalIngSoftware/protected/views/layouts/column1.php(6): SiteController->endContent()
+#6 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/html/yii/framework/web/CController.php(784): SiteController->renderFile()
+#9 /var/www/html/finalIngSoftware/protected/controllers/SiteController.php(32): SiteController->render()
+#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/html/yii/framework/web/CController.php(286): SiteController->runAction()
+#13 /var/www/html/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/html/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/html/finalIngSoftware/index.php(13): CWebApplication->run()
+REQUEST_URI=/finalIngSoftware/index.php?valor=asd+
+in /var/www/html/finalIngSoftware/protected/views/layouts/main.php (49)
+in /var/www/html/finalIngSoftware/protected/views/layouts/column1.php (6)
+in /var/www/html/finalIngSoftware/protected/controllers/SiteController.php (32)
+2014/12/13 08:57:56 [error] [php] Undefined index: valor (/var/www/html/finalIngSoftware/protected/views/layouts/main.php:49)
+Stack trace:
+#0 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(76): RegistroController->renderFile()
+#1 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/html/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#4 /var/www/html/yii/framework/web/CBaseController.php(300): RegistroController->endWidget()
+#5 /var/www/html/finalIngSoftware/protected/views/layouts/column1.php(6): RegistroController->endContent()
+#6 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/yii/framework/web/CBaseController.php(95): RegistroController->renderInternal()
+#8 /var/www/html/yii/framework/web/CController.php(784): RegistroController->renderFile()
+#9 /var/www/html/finalIngSoftware/protected/controllers/RegistroController.php(7): RegistroController->render()
+#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): RegistroController->actionIndex()
+#11 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/html/yii/framework/web/CController.php(286): RegistroController->runAction()
+#13 /var/www/html/yii/framework/web/CController.php(265): RegistroController->runActionWithFilters()
+#14 /var/www/html/yii/framework/web/CWebApplication.php(282): RegistroController->run()
+#15 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/html/finalIngSoftware/index.php(13): CWebApplication->run()
+REQUEST_URI=/finalIngSoftware/index.php?r=registro/index
+in /var/www/html/finalIngSoftware/protected/views/layouts/main.php (49)
+in /var/www/html/finalIngSoftware/protected/views/layouts/column1.php (6)
+in /var/www/html/finalIngSoftware/protected/controllers/RegistroController.php (7)
+2014/12/13 08:57:58 [error] [php] Undefined index: valor (/var/www/html/finalIngSoftware/protected/views/layouts/main.php:49)
+Stack trace:
+#0 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/html/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#4 /var/www/html/yii/framework/web/CBaseController.php(300): SiteController->endWidget()
+#5 /var/www/html/finalIngSoftware/protected/views/layouts/column1.php(6): SiteController->endContent()
+#6 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/yii/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/html/yii/framework/web/CController.php(784): SiteController->renderFile()
+#9 /var/www/html/finalIngSoftware/protected/controllers/SiteController.php(32): SiteController->render()
+#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/html/yii/framework/web/CController.php(286): SiteController->runAction()
+#13 /var/www/html/yii/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/html/yii/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/html/finalIngSoftware/index.php(13): CWebApplication->run()
+REQUEST_URI=/finalIngSoftware/index.php?valor=asdsad+
+in /var/www/html/finalIngSoftware/protected/views/layouts/main.php (49)
+in /var/www/html/finalIngSoftware/protected/views/layouts/column1.php (6)
+in /var/www/html/finalIngSoftware/protected/controllers/SiteController.php (32)
+2014/12/13 08:57:59 [error] [php] Undefined index: valor (/var/www/html/finalIngSoftware/protected/views/layouts/main.php:49)
+Stack trace:
+#0 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(76): RegistroController->renderFile()
+#1 /var/www/html/yii/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/html/yii/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/html/yii/framework/web/CBaseController.php(206): CContentDecorator->run()
+#4 /var/www/html/yii/framework/web/CBaseController.php(300): RegistroController->endWidget()
+#5 /var/www/html/finalIngSoftware/protected/views/layouts/column1.php(6): RegistroController->endContent()
+#6 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#7 /var/www/html/yii/framework/web/CBaseController.php(95): RegistroController->renderInternal()
+#8 /var/www/html/yii/framework/web/CController.php(784): RegistroController->renderFile()
+#9 /var/www/html/finalIngSoftware/protected/controllers/RegistroController.php(7): RegistroController->render()
+#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): RegistroController->actionIndex()
+#11 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/html/yii/framework/web/CController.php(286): RegistroController->runAction()
+#13 /var/www/html/yii/framework/web/CController.php(265): RegistroController->runActionWithFilters()
+#14 /var/www/html/yii/framework/web/CWebApplication.php(282): RegistroController->run()
+#15 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/html/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /var/www/html/finalIngSoftware/index.php(13): CWebApplication->run()
+REQUEST_URI=/finalIngSoftware/index.php?r=registro/index
+in /var/www/html/finalIngSoftware/protected/views/layouts/main.php (49)
+in /var/www/html/finalIngSoftware/protected/views/layouts/column1.php (6)
+in /var/www/html/finalIngSoftware/protected/controllers/RegistroController.php (7)
